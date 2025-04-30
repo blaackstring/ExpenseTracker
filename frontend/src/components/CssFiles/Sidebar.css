@@ -1,0 +1,37 @@
+.hamburger{
+    background-image: url('../../assets/back.png');
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.burger-menu {
+    background-image: url('../../assets/burger-menu.png');
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#icon0{
+    background-image: url('../../assets//dashboard.png');
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#icon1{
+    background-image: url('../../assets/expanse.png');
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#icon2{
+    background-image: url('../../assets/user-logout.png');
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.userimg{
+    background-image: url('../../assets/boy.png');
+    background-size: cover ;
+    background-position: center;
+    background-repeat: no-repeat;
+}
