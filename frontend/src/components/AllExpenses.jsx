@@ -36,7 +36,7 @@ function AllExpenses() {
               <Deletemodal v={v} setallExpenses={setallExpenses} allExpenses={allExpenses}/>
               <UpdateModal v={v}/>
       </div>
-             <div  className=' flex   lg:text-lg w-full text-[12px]  justify-center items-center '>
+             <div  className=' flex   lg:text-lg w-full text-[10px]  justify-center items-center '>
                  <div className='w-full flex flex-col m-1 justify-center items-center'><span className='font-bold'>Category:</span>
                  <span>{v?.category}</span>
                  </div>

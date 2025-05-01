@@ -36,12 +36,12 @@ console.log(state);
    
   }
   return (
-   <div className={`w-[150px]  md:w-[270px] lg:w-[17vw] transition-all duration-500 transform
+   <div className={`w-[130px]  md:w-[270px] lg:w-[17vw] transition-all duration-500 transform
     h-[91vh] bg-black/10 p-1 sm:text-[20px]
    `}>
 
      <div className='w-full h-15 flex justify-end p-2'>
-     <div className="hamburger w-10 h-8 cursor-pointer  "  onClick={()=>setHeaderDataVisible((prev)=>!prev)}></div>
+     <div className="hamburger w-10 h-10 cursor-pointer  "  onClick={()=>setHeaderDataVisible((prev)=>!prev)}></div>
      </div>
       <div className='wrapper h-[70%] w-full p-2 '>
       
