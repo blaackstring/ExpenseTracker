@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast, Bounce } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { signup } from "../controller/Auth";
+import { signup } from "../controller/Auth.js";
 import './commonn.css'
 
 const Signup = () => {
@@ -10,7 +10,6 @@ const Signup = () => {
   const [formdata, setformdata] = useState({
     email: "",
     password: "",
-    gender: '',
     username: '',
   });
 
@@ -22,7 +21,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       console.log(formdata);
-      const fetchData = await signup(formdata);
+      const fetchData = await  signup(formdata);
       console.log(fetchData);
 
       if (fetchData.success) {
@@ -42,7 +41,6 @@ const Signup = () => {
         setformdata({
           email: "",
           password: "",
-          gender: "",
           username: "",
         });
       } else {
