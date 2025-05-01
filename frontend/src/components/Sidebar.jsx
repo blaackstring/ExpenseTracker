@@ -14,14 +14,8 @@ function Sidebar({setHeaderDataVisible,headerDataVisible}) {
     const navigate=useNavigate()
     const dispatch=useDispatch()
     const state=useSelector((state)=>state.UserDetails)
-    
-console.log(state);
 
- useEffect(()=>{
-  if(!state.isLoggedIn){
-    navigate('/login')
-        }
- },[])
+
 
     const Logout=async()=>{
     const data= await logout()

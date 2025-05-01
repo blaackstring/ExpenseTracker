@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './App.css'
-import { Outlet } from 'react-router-dom';
+import { Outlet, useNavigate } from 'react-router-dom';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import { useDispatch, useSelector } from 'react-redux';
@@ -14,24 +14,21 @@ function App() {
    const [headerDataVisible,setHeaderDataVisible]=useState(true);
    const userdetails=useSelector((state)=>state.UserDetails);
    const dispatch=useDispatch()
-  
+   const navigate=useNavigate()
 
 useEffect(()=>{
   const datafetch=async()=>{
     const data= await verify()
     console.log(data);
-    
     if(!data.success) return setHeaderDataVisible(false)
-    dispatch(UserLogin(data));
+    if(data.success){
+      dispatch(UserLogin(data));
+    }
   }
   datafetch()
 },[])
 
 
-   useEffect(()=>{
-    console.log(userdetails.isLoggedIn)
-   },[userdetails])
-  
 
 
   return (

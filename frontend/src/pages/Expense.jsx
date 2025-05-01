@@ -15,13 +15,6 @@ function Expense() {
           { category: 'Movies', amount: 330,date:'30' },
         ]);
         const data=useSelector((state)=>state.Expenses)
-           const state=useSelector((state)=>state.UserDetails)
-              const navigate=useNavigate()
-        
-        
-              if(!state.isLoggedIn){
-                navigate('/login')
-                    }
    
         
       useEffect(()=>{
