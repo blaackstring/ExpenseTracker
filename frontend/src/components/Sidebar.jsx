@@ -36,12 +36,12 @@ console.log(state);
    
   }
   return (
-   <div className={`w-[140px]  md:w-[270px] lg:w-[17vw] transition-all duration-500 transform
+   <div className={`w-[150px]  md:w-[270px] lg:w-[17vw] transition-all duration-500 transform
     h-[91vh] bg-black/10 p-1 sm:text-[20px]
    `}>
 
      <div className='w-full h-15 flex justify-end p-2'>
-     <div className="hamburger w-10 h-10 cursor-pointer  "  onClick={()=>setHeaderDataVisible((prev)=>!prev)}></div>
+     <div className="hamburger w-10 h-8 cursor-pointer  "  onClick={()=>setHeaderDataVisible((prev)=>!prev)}></div>
      </div>
       <div className='wrapper h-[70%] w-full p-2 '>
       
@@ -82,9 +82,9 @@ console.log(state);
 
 </div>}
 
-{!state.isLoggedIn&&<div className='w-full h-[40%] flex flex-col  justify-around items-center mt-5'>
-  <NavLink to='/login' className='border-1 p-2 w-40 text-center hover:bg-black hover:text-white rounded'>Login</NavLink>
-  <NavLink to='/signup'  className='border-1 p-2 w-40 text-center hover:bg-black hover:text-white rounded'>Signup</NavLink>
+{!state.isLoggedIn&&<div className='w-full h-[40%] flex flex-col  justify-around items-center mt-12'>
+  <NavLink to='/login' className='border-1 p-2 text-sm lg:text-2xl w-30 text-center hover:bg-black hover:text-white rounded'>Login</NavLink>
+  <NavLink to='/signup'  className='border-1 p-2 text-sm w-30 lg:text-2xl text-center hover:bg-black hover:text-white rounded'>Signup</NavLink>
 </div>}
       </div>
     </div>
